@@ -21,4 +21,19 @@ public class FPDevicer {
 
         return 100.0 / (1.0 + Math.exp(-4.5 + (0.25 * x)));
     }
+
+    /**
+     * Calculates the confidence score between two fingerprints represented as JSON strings.
+     * See the {@link Fingerprint} class for the structure of the JSON.
+     * The confidence score is a value between 0 and 100, where 100 indicates a perfect match.
+     *
+     * @param f1 The first fingerprint in JSON string format.
+     * @param f2 The second fingerprint in JSON string format.
+     * @return A Double representing the confidence score.
+     */
+    public static Double calculateConfidence(String f1, String f2) {
+        Fingerprint fingerprint1 = Fingerprint.fromJson(f1);
+        Fingerprint fingerprint2 = Fingerprint.fromJson(f2);
+        return calculateConfidence(fingerprint1, fingerprint2);
+    }
 }
