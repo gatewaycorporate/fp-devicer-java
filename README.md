@@ -1,6 +1,6 @@
-# FPDevicer-Java
+# FP-Devicer-Java
 
-FP-Devicer-Java is a digital fingerprinting middleware library designed for ease of use and near-universal compatibility with servers.
+FP-Devicer is a digital fingerprinting middleware library designed for ease of use and near-universal compatibility with servers.
 
 Importing and using the library to compare fingerprints between users is as simple as collecting some user data and running the calculateConfidence function.
 
